@@ -17,9 +17,9 @@
                       :class="route().current('locations.*') ? 'text-purple-400' : 'hover:text-purple-300'"
                 >Index</Link>
 
-                <Link :href="route('home')"
+                <Link :href="route('rankings')"
                       class="transition-all duration-300"
-                      :class="route().current('rank-list') ? 'text-purple-400' : 'hover:text-purple-300'"
+                      :class="route().current('rankings') ? 'text-purple-400' : 'hover:text-purple-300'"
                 >Rank List</Link>
 
             </div>
