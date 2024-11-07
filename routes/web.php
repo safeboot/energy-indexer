@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class)->name('home');
 
-Route::resource('/locations', LocationController::class);
+Route::resource('/locations', LocationController::class)->only(['index', 'create', 'store']);
 
 Route::resource('/brands', BrandController::class)->only(['store']);
 

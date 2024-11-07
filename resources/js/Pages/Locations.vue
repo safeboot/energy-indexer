@@ -318,7 +318,7 @@ export default {
 
     computed: {
         activeLocation() {
-            return this.activeMarker ? this.markers.find(marker => marker.id === this.activeMarker) : null;
+            return this.activeMarker ? Object.values(this.markers).find(marker => marker.id === this.activeMarker) : null;
         }
     },
 
